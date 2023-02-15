@@ -1,10 +1,12 @@
-import Layout from "./components/layouts/Layout";
+import { Main } from "./components/pages/main";
 import styles from "./styles/App.module.scss";
+
+let pages = ["info", "plan", "add", "finish", "end"];
 
 function App() {
   return (
     <div className={styles.App}>
-      <Layout />
+      <Main pages={pages} />
     </div>
   );
 }
