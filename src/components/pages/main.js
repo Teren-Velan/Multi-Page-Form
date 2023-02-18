@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../layouts/Layout";
 import FormLayout from "../layouts/FormLayout";
 import { MultiPageForm } from "../forms/MultiPageForm";
 import styles from "../../styles/Main.module.scss";
 
 export const Main = ({ pages }) => {
+  let [currentPage, setCurrentPage] = useState(pages[0]);
   return (
     <>
-      <Layout>
+      <Layout pages={pages} currentPage={currentPage}>
         <MultiPageForm pages={pages}>
           {({ current, next, previous, reset, goto }) => {
             return (

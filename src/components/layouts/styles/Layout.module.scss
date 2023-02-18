@@ -12,7 +12,14 @@
     background-size: cover;
     background-color: #FAF9F6;
     background-position: 35% 85%;
+    display: flex;
+    justify-content: center;
 }
 
 
-
+.pageNumber {
+    margin-top: 2rem;
+    width: 15rem;
+    display: flex;
+    justify-content: space-around;
+}

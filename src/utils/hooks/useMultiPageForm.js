@@ -3,8 +3,6 @@ import { useState } from "react";
 export const useMultiplePageForm = (pages = ["default"]) => {
   let [current, setCurrent] = useState(pages[0]);
 
-  console.log({ current });
-
   let next = () => {
     let currentIndex = pages.indexOf(current);
     //to check if next item exceeds the length of pages array
